@@ -162,7 +162,38 @@
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name="contact-form">
-              <div class="mb-3">
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="name">
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email Adress</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="subject" aria-describedby="subject" name="subject">
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-12">
+                  <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn btn-primary submit-btn px-5">Submit</button>
+              <button class="btn btn-primary loading-btn px-5 d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+                </div>
+              </div>
+              <!-- <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" name="name">
               </div>
@@ -184,7 +215,7 @@
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
               </button>
-            </div>
+            </div> -->
             </form>
           </div> 
         </div>
